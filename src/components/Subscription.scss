@@ -1,0 +1,44 @@
+
+
+.subscriptionWrapper {
+    padding: 80px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: small;
+    font-weight: 500;
+    
+    p {
+        padding-bottom: 15px;
+    }
+    form {
+        display: flex;
+        gap: 20px;
+        input {
+            color: white;
+            padding: 10px;
+            width: 300px;
+            background: transparent;
+            border-bottom: white 2px solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        input::placeholder  { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #e0e0e0;
+            opacity: 1; /* Firefox */
+          }
+        button {
+            cursor: pointer;
+            color: white;
+            padding: 10px;
+            background: transparent;
+            border-top: 2px white solid;
+            border-bottom: 2px white solid;
+            border-left: none;
+            border-right: none;
+        }
+    }
+}

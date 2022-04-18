@@ -1,0 +1,21 @@
+
+
+.footerContainer {
+    position: relative;
+    padding: 60px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    .firstColumn {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            padding-bottom: 40px;
+        }
+        .addressContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

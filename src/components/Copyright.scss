@@ -1,0 +1,24 @@
+
+
+.copyRightWrapper {
+    padding: 0 150px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+    color: white;
+    font-size: .8em;
+    
+    img {
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 2px white solid ;
+
+    }
+    .socialize {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

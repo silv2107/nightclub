@@ -1,0 +1,122 @@
+
+
+.sliderWrapper {
+    padding: 0 150px;
+    .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+        display: none;
+    }
+    .alice-carousel__dots-item:not(.__custom) {
+        border-radius: 0;
+        height: 15px;
+        width: 15px;
+    }
+
+    .alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
+        background-color: #ff2a70;
+    }
+    .slider {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        
+        .sliderContainer {
+            position: relative;
+            z-index: 0;
+            &:hover .bookNowWrapper {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            &:hover .textEventWrapper {
+                opacity: .85;
+                transform: translateY(0);
+            }
+
+            &:hover .triangleWrapper {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            &:hover .triangleWrapper2 {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            &:hover .eventWrapper {
+                opacity: .4;
+            }
+            .bookNowWrapper {
+                position: absolute;
+                z-index: 4;
+                top: 70px;
+                left: 40%;
+                padding: 10px 15px;
+                color: white;
+                font-size: medium;
+                background: #ff2a70;
+                border: none;
+                opacity: 0;
+                transform: translateY(-50px);
+                transition: opacity 1s, transform 1s;
+            }
+            .textEventWrapper {
+                position: absolute;
+                opacity: 0;
+                z-index: 5;
+                bottom: 25px;
+                transform: translateY(50px);
+                transition: opacity 1s, transform 1s;
+
+
+            }
+            .triangleWrapper {
+                position: absolute;
+                bottom: 25px;
+                right: 0;
+                z-index: 5;
+                opacity: 0;
+                transform: translate(20px, 20px);
+                transition: opacity 1s, transform 1s;
+            }
+            .triangleWrapper2 {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 5;
+                opacity: 0;
+                transform: translate(-20px, -20px);
+                transition: opacity 1s, transform 1s;
+            }
+            .eventWrapper {
+                position: absolute;
+                background-color: black;
+                z-index: 3;
+                opacity: 0;
+                top: 0;
+                bottom: 25px;
+                left: 0;
+                right: 0;
+                transition: opacity 1s;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .sliderDescription {
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                background-color: #ff2a70;
+                color: white;
+                font-size: small;
+                position: absolute;
+                width: 100%;
+                height: 25px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+    
+}

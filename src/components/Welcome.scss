@@ -1,0 +1,55 @@
+
+
+.cardWrapper {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    .welcomeContent {
+        position: absolute;
+        border-bottom: 1px #ff2a70 solid ;
+        border-top: 1px solid #ff2a70;
+        inset: 0;
+        z-index: 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        padding-top: 75px;
+        .welcomeTitle {
+            transition: transform 1.5s;
+            font-size: larger;
+            font-weight: 700;
+        }
+        .welcomeText {
+            font-size: small;
+            font-weight: 400;
+            color: #e0e0e0;
+            text-align: center;
+            line-height: 1.5em;
+            padding: 0 25px;
+            opacity: 0;
+            transform: translateX(60px);
+            transition: transform 1.5s, opacity 1.5s;
+        }
+    }
+    .frontImg {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1.5s;
+    }
+    &:hover .frontImg {
+        opacity: 0;
+    }
+    &:hover .welcomeTitle {
+        transform: scale(1.1);
+    }
+    &:hover .welcomeText {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}

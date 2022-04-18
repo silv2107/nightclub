@@ -1,0 +1,18 @@
+
+
+.triangleContainer {
+    position: absolute;
+    bottom: -.5px;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    .triangle {
+        height: 0;
+        width: 0;
+        border-bottom: 30px solid #ff2a70;
+        border-left: 30px solid transparent;
+    }
+}
+
+    

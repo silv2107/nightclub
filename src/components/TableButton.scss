@@ -1,0 +1,24 @@
+
+.bSmall {
+    width: 100px;
+    background-image: url("../img/t1.png");
+}
+.bMedium {
+    width: 110px;
+    background-image: url("../img/t2.png");
+}
+.bLarge {
+    width: 120px;
+    background-image: url("../img/t3.png");
+}
+
+.sameValue {
+    cursor: pointer;
+    color: white;
+    font-size: .5em;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+}

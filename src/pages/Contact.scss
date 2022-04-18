@@ -1,0 +1,83 @@
+.contactWrapper {
+    background-color: black;
+    
+    .navigationWrapper {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .mainContact {
+        .formWrapper {
+            padding: 0 150px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px;
+            .loginForm {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                input {
+                    color: white;
+                    padding: 10px;
+                    background: transparent;
+                    border: .3px solid grey;
+
+                }
+                textarea {
+                    padding: 10px;
+                    background: transparent;
+                }
+                .wrapperButton {
+                    background: transparent;
+                    cursor: pointer;
+                    color: white;
+                    width: 150px;
+                    padding: 10px;
+                    border-bottom: 2px solid white ;
+                    border-top: 2px solid white;
+                    border-left: none;
+                    border-right: none;
+                    align-self: flex-end;
+                }
+        
+            }
+            .contactInfo {
+                position: relative;
+                background-color: #ff2a70;
+                height: 40%;
+                padding: 20px;
+                color: white;
+                display: flex;
+                gap: 20px;
+                font-size: small;
+                .infoFirstColumn {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    div {
+                        display: flex;
+                        gap: 10px;
+                    }
+                }
+                .infoSecondColumn {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    div {
+                        display: flex;
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.contactIcons {
+    width: 20px;
+    height: 20px;
+}
+
+

@@ -1,0 +1,36 @@
+
+
+.navWrapper {
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom:1px #ff2a70 solid;
+    border-top: 1px #ff2a70 solid;
+    .nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: white;
+                transition: color .8s, border-bottom .8s;
+                padding-bottom: 15px;
+
+            }
+            
+            &:hover a {
+                color: #ff2a70;
+                border-bottom: 1px solid #ff2a70;
+                
+            }
+        }
+    }
+}

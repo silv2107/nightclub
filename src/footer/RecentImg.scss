@@ -1,0 +1,28 @@
+
+
+
+.recentImgWrapper {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: small;
+    display: flex;
+    gap: 10px;
+    .imageWrapper {
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+    }
+    .recentTextWrapper {
+        line-height: 1.2em;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p {
+            span {
+                color: #ff2a70;
+            }
+        }
+    }
+}
