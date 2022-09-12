@@ -91,7 +91,6 @@ handle user feedback with regular expression
 
 - Post requests, if the first attempt to reserve a table passes the validation, to register reservations. Reservations are registered at the specified endpoint in the API 
 
-### Exam presentation
-** I would like to discuss, and explain the code of this functionality, in more detail at the exam presentation
+
 
 
